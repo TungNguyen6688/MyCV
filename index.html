@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="pagetop">
     <!-- header -->
     <div id="header">
         <div class="intro">
@@ -44,7 +44,7 @@
                         <div class="intro-text text-center">
                             <h1>Nguyen Xuan Tung</h1>
                             <p>Software Engineer</p>
-                            <a href="#about" class="btn btn-default btn-lg page-scroll">About me</a>
+                            <a href="" class="btn btn-default btn-lg page-scroll" data-target = 'about'>About me</a>
                         </div>
                     </div>
                 </div>
@@ -61,22 +61,22 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav m-auto mt-2 mt-lg-0">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="#pagetop"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#page-top">Home</a>
+                        <a class="nav-link page-scroll" href="" data-target = 'pagetop'>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link page-scroll" href="" data-target = 'about'>About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#skills">Skills</a>
+                        <a class="nav-link page-scroll" href="" data-target = 'skills'>Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#testimonials">project</a>
+                        <a class="nav-link page-scroll" href="" data-target = 'testimonials'>project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        <a class="nav-link page-scroll" href="" data-target = 'contact'>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -272,6 +272,8 @@
             </div>
         </div>
     </div>
+    <button id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/jquery.easypiechart.js"></script>
     <script src="./js/main.js"></script>

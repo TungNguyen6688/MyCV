@@ -1,29 +1,29 @@
 $(document).ready(function () {
-    $('#page-top').scroll(function () {
-        var top = $(this).scrollTop();
 
-        if (top > 1300) {
-            $('.chart').easyPieChart({
-                easing: 'easeOutBounce',
-                onStep: function (from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-        }
-    })
+
+    var objpos = {
+        pagetop: $('#pagetop').offset().top,
+        about: $('#about').offset().top,
+        skills: $('#skills').offset().top,
+        testimonials: $('#testimonials').offset().top,
+        contact: $('#contact').offset().top
+    }
 
     $('a.page-scroll').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top - 40
-                }, 900);
-                return false;
-            }
-        }
+
+        var target = $(this).data('target');
+
+        var pos = objpos[target];
+
+        $('html, body').animate({
+            scrollTop: pos - 65
+        }, 900)
+
+        return false;
+
     });
+
+
     // affix the navbar after scroll below header
     var flag = false;
 
@@ -37,6 +37,42 @@ $(document).ready(function () {
             $('#nav').removeClass('fix');
             flag = false;
         }
+    })
+
+    // draw chart
+    $('#pagetop').scroll(function () {
+        var top = $(this).scrollTop();
+
+        if (top > 1300) {
+            $('.chart').easyPieChart({
+                easing: 'easeOutBounce',
+                barColor: '#17d3e6',
+                scaleColor : false,
+                lineWidth: 6,
+                trackColor: '#373737',
+                lineCap : 'circle',
+                animate: 2000,
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+        }
+    })
+
+    // backtoptop
+    $('#pagetop').scroll(function(){
+        if($(this).scrollTop()  > 1000){
+            $('#myBtn').addClass('show');
+        }
+        else{
+            $('#myBtn').removeClass('show');
+        }
+    })
+
+    $('#myBtn').click(function(){
+        $('#pagetop').animate({
+            scrollTop: 0
+        },900)
     })
 });
 
