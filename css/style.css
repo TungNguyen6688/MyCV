@@ -202,6 +202,18 @@ a:focus {
   color: #333;
 }
 
+#about i{
+  font-size: 25px;
+  color: #444;
+  margin-right: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#about i:hover{
+  color: #4063a4;
+}
+
 .section-title {
   padding: 25px 0 30px 0;
   line-height: 20px;
