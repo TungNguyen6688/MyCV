@@ -1,0 +1,447 @@
+html ,body {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 700;
+}
+h1 strong {
+  font-weight: 900;
+}
+h2 {
+  line-height: 20px;
+  margin: 0;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+h3,
+h4 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 15px;
+}
+/* p.intro {
+  font-size: 16px;
+  margin: 12px 0 0;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+} */
+a {
+  color: #222;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #526cbb;
+}
+
+/* style header */
+
+#header,
+#header .intro .container,
+#header .intro .container .row {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+#header .intro {
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg.jpg") center center;
+  background-size: cover;
+}
+
+#header .intro .intro-text {
+  color: #fff;
+}
+
+.intro {
+  height: 100%;
+  padding: 0;
+  color: #fff;
+}
+.intro h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.intro .intro-text p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.btn-default {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 12px 20px;
+  margin: 0;
+  font-size: 15px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active {
+  color: #fff;
+  background-color: #222;
+  border-color: #222;
+}
+.btn-primary {
+  color: #526cbb;
+  background-color: transparent;
+  padding: 12px 20px;
+  border: 2px solid #526cbb;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #fff;
+  background-color: #526cbb;
+  border-color: #526cbb;
+}
+.btn-primary i.fa {
+  margin-right: 10px;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* navigation */
+
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  background: #222;
+  padding: 25px 0;
+}
+
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 30px;
+  margin: 0 10px;
+  color: #aaa;
+  transition: 0.4s;
+}
+
+.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #526cbb;
+}
+
+/* about */
+#about .container {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+#about .about-text {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+#about .about-text p.end-line {
+  padding-bottom: 50px;
+}
+
+#about .about-text p.end-line:after {
+  content: "";
+  width: 30%;
+  height: 4px;
+  position: absolute;
+  top: 35%;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 0;
+  background: linear-gradient(
+    to right,
+    rgba(107, 77, 168, 1) 0%,
+    rgba(73, 119, 194, 1) 100%
+  );
+}
+
+#about .about-text p {
+  margin: 20px 0;
+  display: block;
+}
+
+#about .about-text span {
+  color: #333;
+}
+
+.section-title {
+  padding: 25px 0 30px 0;
+  line-height: 20px;
+  margin: 0;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  position: relative;
+  top: 25px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 0;
+  background: linear-gradient(
+    to right,
+    rgba(107, 77, 168, 1) 0%,
+    rgba(73, 119, 194, 1) 100%
+  );
+}
+
+/* Skills Section */
+#skills {
+  font-family: "Open Sans", sans-serif;
+  padding: 100px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
+  background: rgb(107, 77, 168); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    rgba(107, 77, 168, 1) 0%,
+    rgba(73, 119, 194, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(107, 77, 168, 1) 0%,
+    rgba(73, 119, 194, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(107, 77, 168, 1) 0%,
+    rgba(73, 119, 194, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
+}
+#skills h2 {
+  color: #fff;
+}
+#skills hr {
+  background: rgba(255, 255, 255, 0.3);
+}
+#skills .skill {
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0px;
+}
+#skills .skill h4 {
+  font-weight: 600;
+  color: #fff;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  position: absolute;
+  top: -14px;
+  left: 39px;
+  display: inline-block;
+  font-size: 21px;
+  color: #fff;
+  line-height: 140px;
+  z-index: 2;
+}
+.percent:after {
+  content: "%";
+  margin-left: 0.1em;
+  font-size: 0.8em;
+}
+
+/* Testimonials Section */
+#testimonials {
+  font-family: "Roboto", sans-serif;
+  padding: 100px 0;
+  background: #f6f6f6;
+  font-size: 16px;
+  line-height: 24px;
+}
+#testimonials blockquote {
+  position: relative;
+  margin-top: 20px;
+  border: 0;
+  text-align: center;
+  background: #fff;
+  padding: 30px 20px;
+}
+#testimonials i {
+  font-size: 24px;
+  color: #eee;
+  margin-bottom: 14px;
+}
+
+#testimonials .clients-name {
+  display: inline-block;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+#contact {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background: url(../images/bg.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#contact .overlay {
+  padding: 100px 0 40px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100&0.85+0,0.85+100 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(107, 77, 168, 0.85) 0%,
+    rgba(73, 119, 194, 0.85) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(107, 77, 168, 0.85) 0%,
+    rgba(73, 119, 194, 0.85) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(107, 77, 168, 0.85) 0%,
+    rgba(73, 119, 194, 0.85) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); /* IE6-9 */
+}
+#contact h2 {
+  color: #fff;
+}
+#contact form {
+  padding: 30px 0;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+#contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#contact .form-control:focus {
+  border-color: inherit;
+  outline: 0;
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+  color: #2c3e50;
+}
+.form-control:-moz-placeholder {
+  color: #2c3e50;
+}
+.form-control::-moz-placeholder {
+  color: #2c3e50;
+}
+.form-control:-ms-input-placeholder {
+  color: #2c3e50;
+}
+#contact .btn {
+  margin-top: 20px;
+}
+
+#contact .social ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#contact .social i.fab {
+  font-size: 30px;
+  padding: 4px 5px;
+  color: #fff;
+  transition: 0.4s;
+}
+#contact .social i.fab:hover {
+  color: #4063a4;
+}
+
+/* Footer Section*/
+#footer {
+  background: #222;
+  color: #fff;
+}
+#footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+#nav {
+  transition: 0.4s;
+}
+
+#nav.fix {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+  left: 0 !important;
+  z-index: 5;
+  overflow-x: hidden;
+}
