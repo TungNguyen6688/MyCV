@@ -178,6 +178,8 @@
 
             ctx.lineCap = options.lineCap;
 
+            ctx.lineCap = options.lineCap;
+
             // if barcolor is a function execute it and pass the percent as a value
             var color;
             if (typeof (options.barColor) === 'function') {
@@ -359,6 +361,9 @@
             }
         });
     };
-
-
 }));
+
+
+
+
+
